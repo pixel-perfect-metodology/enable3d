@@ -8,7 +8,7 @@ export { Scene3D } from './scene3d'
 export { enable3d } from './enable3d'
 export { PhysicsLoader } from '@enable3d/common/dist/physicsLoader'
 
-export * as Canvas from '@enable3d/common/dist/customCanvas'
+export { Canvas } from '@enable3d/common/dist/customCanvas'
 
 export { ExtendedMesh } from '@enable3d/common/dist/extendedMesh'
 export { ExtendedObject3D } from '@enable3d/common/dist/extendedObject3D'

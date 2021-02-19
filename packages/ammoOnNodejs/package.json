@@ -30,6 +30,7 @@
   "homepage": "https://enable3d.io",
   "devDependencies": {
     "@enable3d/ammo-physics": "^0.22.0-dev.0",
+    "@enable3d/common": "^0.22.0-dev.0",
     "fflate": "^0.6.3"
   },
   "peerDependencies": {

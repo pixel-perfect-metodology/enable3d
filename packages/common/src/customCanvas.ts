@@ -19,7 +19,7 @@ interface CustomCanvasConfig {
  * The WebGL context created by Phaser does not meed the requirements of three.js.
  * So we create a custom canvas and merge the default contextAttributes from 'three'.js into Phaser’s default contextAttributes.
  */
-const customCanvas = (
+export const Canvas = (
   customCanvasConfig: CustomCanvasConfig = {}
 ): { canvas: HTMLCanvasElement; context: CanvasRenderingContext2D } => {
   const { antialias = true, parent: p = undefined, canvasId = 'enable3d-phaser-canvas' } = customCanvasConfig
@@ -84,5 +84,3 @@ const customCanvas = (
     context: myCustomContext
   }
 }
-
-export default customCanvas

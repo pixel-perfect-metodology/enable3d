@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npm run tsc",
-    "tsc": "lerna run tsc",
+    "tsc": "lerna run tsc && npm run start:ammoOnNodejs",
     "update-and-fix": "lerna run update && lerna run fix",
     "clean:dist": "rimraf packages/threeWrapper/dist packages/common/dist packages/ammoPhysics/dist packages/ammoOnNodejs/dist packages/enable3d/dist packages/threeGraphics/dist packages/phaserExtension/dist",
     "clean:bundles": "rimraf bundles",
