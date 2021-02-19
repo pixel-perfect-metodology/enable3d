@@ -1,8 +1,7 @@
 // export * from 'three'
 
 // deprecated
-export { Geometry } from 'three/examples/jsm/deprecated/Geometry'
-export { Face3 } from './deprecated.face3'
+// export { Geometry, Face3 } from './deprecated.geometry'
 
 // custom exports
 // export { ConvexGeometry } from 'three/examples/jsm/geometries/ConvexGeometry'
@@ -24,15 +23,15 @@ export { Face3 } from './deprecated.face3'
 // export { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass.js'
 // export { DotScreenShader } from 'three/examples/jsm/shaders/DotScreenShader.js'
 
-import { REVISION } from 'three'
+// import { REVISION } from 'three'
 
-const info = `Three.js r${REVISION}`
-console.log(
-  `%c %c %c %c %c ${info} %c https://threejs.org/`,
-  'background: #ff0000',
-  'background: #ffff00',
-  'background: #00ff00',
-  'background: #00ffff',
-  'color: #fff; background: #000000;',
-  'background: none'
-)
+// const info = `Three.js r${REVISION}`
+// console.log(
+//   `%c %c %c %c %c ${info} %c https://threejs.org/`,
+//   'background: #ff0000',
+//   'background: #ffff00',
+//   'background: #00ff00',
+//   'background: #00ffff',
+//   'color: #fff; background: #000000;',
+//   'background: none'
+// )

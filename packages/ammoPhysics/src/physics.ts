@@ -19,7 +19,7 @@ export { ExtendedGroup }
 import Shapes from './shapes'
 import Constraints from './constraints'
 import { EventEmitter } from 'eventemitter3'
-import { Geometry } from '@enable3d/three-wrapper/dist/index'
+import { Geometry } from 'three/examples/jsm/deprecated/Geometry'
 import { Vector3, Quaternion, Scene, Euler, Matrix4, BufferGeometry, REVISION } from 'three'
 import {
   iterateGeometries,
