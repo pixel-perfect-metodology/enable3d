@@ -18,7 +18,7 @@ module.exports = env => {
       extensions: ['.ts', '.js']
     },
     externals: {
-      '@enable3d/three-wrapper/dist/index': 'THREE',
+      three: 'THREE',
       phaser: 'Phaser',
       'matter-js': 'Matter',
       'poly-decomp': 'poly-decomp'

@@ -1,8 +1,15 @@
-const { Ammo, Physics, ServerClock, Loaders, ExtendedObject3D, ExtendedMesh } = require('@enable3d/ammo-on-nodejs/dist/index')
+var _ammo = require('@enable3d/ammo-on-nodejs/ammo/ammo.js')
+
+const { Physics, ServerClock, Loaders, ExtendedObject3D, ExtendedMesh } = require('@enable3d/ammo-on-nodejs')
+
 const path = require('path')
 
 const MainScene = () => {
   const physics = new Physics()
+
+  // test
+  const btVector3 = new Ammo.btVector3()
+  console.log('btVector3', btVector3)
 
   let ground = physics.add.ground({ width: 20, height: 20, name: 'ground' })
 
@@ -79,6 +86,12 @@ const MainScene = () => {
   })
 }
 
-Ammo().then(() => {
+_ammo().then(Ammo => {
+  globalThis.Ammo = Ammo
+
+  // test
+  const btVector3 = new Ammo.btVector3()
+  console.log('btVector3', btVector3)
+
   MainScene()
 })
