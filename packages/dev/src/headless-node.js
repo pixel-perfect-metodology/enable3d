@@ -1,4 +1,4 @@
-const { Ammo, Physics, ServerClock, Loaders, ExtendedObject3D, ExtendedMesh } = require('@enable3d/ammo-on-nodejs')
+const { Ammo, Physics, ServerClock, Loaders, ExtendedObject3D, ExtendedMesh } = require('@enable3d/ammo-on-nodejs/dist/index')
 const path = require('path')
 
 const MainScene = () => {
@@ -64,12 +64,12 @@ const MainScene = () => {
   const animate = delta => {
     physics.update(delta * 1000)
 
-    if (this.hero?.body) {
+    if (this.hero && this.hero.body) {
       const pos = this.hero.position.y.toFixed(2)
       if (pos > 10) console.log(this.hero.name, pos)
     }
 
-    if (this.robot?.body) {
+    if (this.robot && this.robot.body) {
       const pos = this.robot.position.y.toFixed(2)
       if (pos > 10) console.log(this.robot.name, pos)
     }
