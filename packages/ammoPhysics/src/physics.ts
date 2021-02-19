@@ -19,7 +19,7 @@ export { ExtendedGroup }
 import Shapes from './shapes'
 import Constraints from './constraints'
 import { EventEmitter } from 'eventemitter3'
-import { Geometry } from 'three/examples/jsm/deprecated/Geometry'
+import { Geometry } from './externals'
 import { Vector3, Quaternion, Scene, Euler, Matrix4, BufferGeometry, REVISION } from 'three'
 import {
   iterateGeometries,
@@ -41,6 +41,7 @@ export { PhysicsLoader }
 
 import * as Types from '@enable3d/common/dist/types'
 import { ClosestRaycaster, AllHitsRaycaster } from './raycaster/raycaster'
+import { Geom } from 'phaser'
 export { ClosestRaycaster, AllHitsRaycaster }
 export { Types }
 
@@ -677,10 +678,10 @@ class AmmoPhysics extends EventEmitter {
     const btHalfExtents = new Ammo.btVector3()
 
     // transform geometry to bufferGeometry (because three-to-ammo works only with bufferGeometry)
-    // @ts-expect-error
+    // @ts-ignore
     const geometry = object?.geometry as Geometry
     if (object && geometry?.isGeometry) {
-      // @ts-expect-error
+      // @ts-ignore
       object.geometry = new BufferGeometry().fromGeometry(geometry)
     }
 
