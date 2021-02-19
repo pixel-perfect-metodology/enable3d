@@ -14,24 +14,20 @@ import {
   PerspectiveCamera,
   OrthographicCamera,
   Shape,
-  // ExtrudeGeometryOptions, // missing since three.js r121
   MeshLambertMaterialParameters,
   Texture,
   MeshToonMaterialParameters,
   MeshPhysicalMaterialParameters,
   Material,
   WebGLRenderer,
-  Vector3,
   Quaternion
 } from 'three'
+
 import { ExtendedObject3D } from './extendedObject3D'
 import { ExtendedMesh } from './extendedMesh'
 
 export { ExtendedObject3D }
 export { ExtendedMesh }
-// TODO fix this export
-// export { ThirdPersonControls } from '../misc/thirdPersonControls'
-export { AnimationMixer, AnimationClip, AnimationAction, Object3D, Mesh, Material, Line, Points, Group } from 'three'
 
 export interface ThreeGraphicsConfig {
   anisotropy?: number
