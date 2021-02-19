@@ -1,5 +1,5 @@
 // misc
-import { addWater, AddWaterConfig } from '@enable3d/common/dist/misc/water'
+import { addWater, AddWaterConfig } from './water'
 import { Scene, WebGLRenderer, Material, Texture, RepeatWrapping } from 'three'
 import { Factories } from '.'
 

@@ -4,7 +4,7 @@
  * @license      {@link https://github.com/enable3d/enable3d/blob/master/LICENSE|GNU GPLv3}
  */
 
-import {
+import type {
   MeshStandardMaterialParameters,
   MeshBasicMaterialParameters,
   MeshPhongMaterialParameters,
@@ -23,8 +23,8 @@ import {
   Quaternion
 } from 'three'
 
-import { ExtendedObject3D } from './extendedObject3D'
-import { ExtendedMesh } from './extendedMesh'
+import type { ExtendedObject3D } from './extendedObject3D'
+import type { ExtendedMesh } from './extendedMesh'
 
 export { ExtendedObject3D }
 export { ExtendedMesh }

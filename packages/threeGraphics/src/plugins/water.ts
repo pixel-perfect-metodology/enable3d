@@ -1,6 +1,6 @@
 import { PlaneBufferGeometry, Scene, Vector2, Mesh, MeshStandardMaterial, WebGLRenderer, Texture } from 'three'
 import { Water } from 'three/examples/jsm/objects/Water2'
-import { Color } from '../types'
+import { Color } from '@enable3d/common/src/types'
 
 // from this example:
 // https://threejs.org/examples/?q=water#webgl_water
