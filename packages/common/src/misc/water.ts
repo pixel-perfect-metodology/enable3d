@@ -1,13 +1,5 @@
-import {
-  PlaneBufferGeometry,
-  Scene,
-  Vector2,
-  Mesh,
-  MeshStandardMaterial,
-  Water,
-  WebGLRenderer,
-  Texture
-} from '@enable3d/three-wrapper/dist/index'
+import { PlaneBufferGeometry, Scene, Vector2, Mesh, MeshStandardMaterial, WebGLRenderer, Texture } from 'three'
+import { Water } from 'three/examples/jsm/objects/Water2'
 import { Color } from '../types'
 
 // from this example:

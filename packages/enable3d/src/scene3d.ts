@@ -5,7 +5,8 @@
  */
 
 import { ThreeGraphics } from '@enable3d/three-graphics/dist/index'
-import { Clock, EffectComposer, WebGLRenderer } from '@enable3d/three-wrapper/dist/index'
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js'
+import { Clock, WebGLRenderer } from 'three'
 import { ExtendedObject3D, ExtendedMesh } from '@enable3d/common/dist/types'
 import { AmmoPhysics } from '@enable3d/ammo-physics'
 
@@ -14,7 +15,7 @@ import * as Plugins from '@enable3d/three-graphics/dist/plugins/index'
 // https://www.typescriptlang.org/docs/handbook/utility-types.html Pick<T,K>
 // export class Scene3D implements Partial<ThreeGraphics> {
 export class Scene3D implements Partial<ThreeGraphics> {
-  // core modules from three-graphics
+  // core modules from 'three'-graphics
   public scenes: Map<string, Scene3D> = new Map()
   public scene: ThreeGraphics['scene']
   public camera: ThreeGraphics['camera']

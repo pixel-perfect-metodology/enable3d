@@ -1,5 +1,5 @@
 /**
- * Copied from three.js examples and added a fix
+ * Copied from 'three'.js examples and added a fix
  */
 
 /**
@@ -33,8 +33,8 @@
  *
  */
 
-import { Line3, Mesh, Plane, Vector3 } from '@enable3d/three-wrapper/dist/index'
-import { ConvexGeometry } from '@enable3d/three-wrapper/dist/index'
+import { Line3, Mesh, Plane, Vector3 } from 'three'
+import { ConvexGeometry } from 'three/examples/jsm/geometries/ConvexGeometry'
 import logger from '@enable3d/common/dist/logger'
 
 const ConvexObjectBreaker = function (minSizeForBreak?: number, smallDelta?: number) {

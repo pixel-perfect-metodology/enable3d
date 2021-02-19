@@ -45,7 +45,7 @@ export class Project extends ThreeGraphics {
           textureAnisotropy: this.textureAnisotropy,
           autoStart: false
         },
-        // add core features from three-graphicsconfig: {
+        // add core features from 'three'-graphicsconfig: {
         renderer: this.renderer,
         parent: this.parent,
         canvas: this.canvas,

@@ -7,7 +7,7 @@
 import { ExtendedObject3D, XYZ } from './types'
 
 import { EventEmitter } from 'eventemitter3'
-import { Euler, Quaternion } from '@enable3d/three-wrapper/dist/index'
+import { Euler, Quaternion } from 'three'
 import { CollisionEvent } from './types'
 
 class PhysicsBody {
@@ -324,7 +324,7 @@ class PhysicsBody {
    * @param angular A number from 0 to 1.
    */
   public setDamping(linear: number, angular: number) {
-    this.ammo.setDamping(linear, angular);
+    this.ammo.setDamping(linear, angular)
   }
 
   /** Set per body gravity */

@@ -6,18 +6,17 @@
 
 // TODO(yandeu) Make heightmap work with Buffer Geometries.
 
+import { Face3, Geometry } from '@enable3d/three-wrapper/dist'
 import {
   Scene,
   PlaneBufferGeometry,
   MeshPhongMaterial,
-  Geometry,
   DoubleSide,
-  Face3,
   Color,
   Texture,
   MeshPhongMaterialParameters,
   BufferGeometry
-} from '@enable3d/three-wrapper/dist/index'
+} from 'three'
 import { HeightMapConfig, ExtendedMesh } from '@enable3d/common/dist/types'
 import { fromGeometry } from './csg/_fromGeometry'
 

@@ -19,16 +19,8 @@ export { ExtendedGroup }
 import Shapes from './shapes'
 import Constraints from './constraints'
 import { EventEmitter } from 'eventemitter3'
-import {
-  Vector3,
-  Quaternion,
-  Scene,
-  Euler,
-  Matrix4,
-  Geometry,
-  BufferGeometry,
-  REVISION
-} from '@enable3d/three-wrapper/dist/index'
+import { Geometry } from '@enable3d/three-wrapper/dist/index'
+import { Vector3, Quaternion, Scene, Euler, Matrix4, BufferGeometry, REVISION } from 'three'
 import {
   iterateGeometries,
   createHullShape,
