@@ -18,7 +18,8 @@ import {
 } from 'three'
 import { ExtendedMesh } from '@enable3d/common/dist/extendedMesh'
 import { HeightMapConfig } from '@enable3d/common/dist/types'
-import { Face3, Geometry } from 'three/examples/jsm/deprecated/Geometry'
+import { Geometry } from 'three/examples/jsm/deprecated/Geometry'
+import { Face3 } from '@enable3d/three-wrapper/dist/deprecated/face3'
 import { fromGeometry } from './csg/_fromGeometry'
 
 export default class HeightMap {

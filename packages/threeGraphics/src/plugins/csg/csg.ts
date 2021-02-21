@@ -10,7 +10,8 @@
 // which is a typescript rewrite of https://github.com/manthrax/THREE-CSGMesh
 // which as originally written by Copyright (c) 2011 Evan Wallace (http://madebyevan.com/), under the MIT license.
 
-import { Face3, Geometry } from 'three/examples/jsm/deprecated/Geometry'
+import { Geometry } from 'three/examples/jsm/deprecated/Geometry'
+import { Face3 } from '@enable3d/three-wrapper/dist/deprecated/face3'
 import { Vector3, Matrix3, Mesh, Matrix4, Scene, REVISION } from 'three'
 import Transform from '../transform'
 
