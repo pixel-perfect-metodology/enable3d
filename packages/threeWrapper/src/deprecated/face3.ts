@@ -1,5 +1,19 @@
+import { Color, Vector3 } from 'three'
+
 class Face3 {
-  constructor(a, b, c, normal, color, materialIndex = 0) {
+  a: any
+  b: any
+  c: any
+
+  normal: any
+  vertexNormals: any
+
+  color: any
+  vertexColors: any
+
+  materialIndex: any
+
+  constructor(a: any, b: any, c: any, normal: any, color: any, materialIndex = 0) {
     this.a = a
     this.b = b
     this.c = c
@@ -14,10 +28,11 @@ class Face3 {
   }
 
   clone() {
+    // @ts-ignore
     return new this.constructor().copy(this)
   }
 
-  copy(source) {
+  copy(source: any) {
     this.a = source.a
     this.b = source.b
     this.c = source.c
