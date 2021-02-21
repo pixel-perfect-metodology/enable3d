@@ -133,6 +133,7 @@ interface GeometryPhysicsOptions {
   collisionGroup?: number
   collisionMask?: number
   breakable?: boolean
+  fractureImpulse?: number
   mass?: number
 }
 

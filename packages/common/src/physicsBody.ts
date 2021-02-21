@@ -17,7 +17,10 @@ class PhysicsBody {
   public name: string
   public errors: string[] = []
   public checkCollisions = false
+
   public breakable = false
+  public fractureImpulse = 1
+
   public didUpdate = false
   /** Skip syncing the mesh to the physics body. */
   public skipUpdate = false
