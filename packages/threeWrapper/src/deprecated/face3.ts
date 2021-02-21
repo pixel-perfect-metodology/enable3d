@@ -13,7 +13,7 @@ class Face3 {
 
   materialIndex: any
 
-  constructor(a: any, b: any, c: any, normal: any, color: any, materialIndex = 0) {
+  constructor(a: any, b: any, c: any, normal?: any, color?: any, materialIndex = 0) {
     this.a = a
     this.b = b
     this.c = c
