@@ -1,4 +1,6 @@
 import { PlaneBufferGeometry, Scene, Vector2, Mesh, MeshStandardMaterial, WebGLRenderer, Texture } from 'three'
+
+// @ts-expect-error // wrong export name by @types/three
 import { Water } from 'three/examples/jsm/objects/Water2'
 import { Color } from '@enable3d/common/src/types'
 
